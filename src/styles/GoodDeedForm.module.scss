@@ -1,0 +1,59 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+.error {
+  margin: 0 0 1rem;
+  color: #f44336;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+
+  label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+
+  input,
+  textarea {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    resize: none;
+  }
+
+  textarea {
+    height: 10rem;
+  }
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.saveBtn,
+.cancelBtn {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.saveBtn {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+.cancelBtn {
+  background-color: #f44336;
+  color: #fff;
+}

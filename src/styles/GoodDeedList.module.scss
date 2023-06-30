@@ -1,0 +1,81 @@
+.list {
+  list-style: none;
+  display: flex;
+  margin: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.empty {
+  margin-top: 1rem;
+  text-align: center;
+  font-style: italic;
+  color: #999;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalContent {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+
+  label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+
+  input,
+  textarea {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    resize: none;
+  }
+
+  textarea {
+    height: 10rem;
+  }
+}
+
+.modalButtons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.saveBtn,
+.cancelBtn {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.saveBtn {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+.cancelBtn {
+  background-color: #f44336;
+  color: #fff;
+}

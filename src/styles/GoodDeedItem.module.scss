@@ -1,0 +1,93 @@
+.container {
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px;
+
+  &:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+}
+
+.deed {
+  flex: 1 1 0%; // добавляем свойство flex-basis
+  margin-right: 1rem;
+  max-width: 300px;
+  max-height: 100px;
+}
+
+.title {
+  margin: 0 0 0.5rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  overflow: hidden;
+}
+
+.description {
+  margin: 0;
+  font-size: 1rem;
+  overflow: hidden;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.editBtn,
+.deleteBtn {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-right: 5px;
+
+  &:hover {
+    background-color: #3f51b5;
+  }
+}
+
+.editBtn {
+  background-color: #2196f3;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.deleteBtn {
+  background-color: #f44336;
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .deed {
+    margin-right: 0;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    padding: 1rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .description {
+    font-size: 1.25rem;
+  }
+
+  .editBtn,
+  .deleteBtn {
+    margin-bottom: 0.5rem;
+    width: 100%;
+  }
+}
